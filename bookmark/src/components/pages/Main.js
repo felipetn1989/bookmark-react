@@ -6,6 +6,7 @@ import opera from "../images/logo-opera.svg";
 import Button from "../buttons/Button";
 
 import Features from "../blocks/Features";
+import FAQ from "../blocks/FAQ";
 
 export default function Main() {
   return (
@@ -100,6 +101,7 @@ export default function Main() {
           </div>
         </div>
       </section>
+      <FAQ />
     </main>
   );
 }
