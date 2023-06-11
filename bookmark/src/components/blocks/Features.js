@@ -1,30 +1,58 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { useState } from "react";
 
 import Bookmarking from "./Bookmarking";
 import Searching from "./Searching";
 import Sharing from "./Sharing";
 
 export default function Features() {
-  return (
-    <div>
-      <h2>Features</h2>
+  const [activeLink, setActiveLink] = useState("bookmarking");
 
-      <p>
+  function handleLinkClick(path) {
+    setActiveLink(path);
+  }
+
+  return (
+    <div className="grid gap-3 px-8 my-[8.5rem]">
+      <h2 className="text-2xl font-medium tracking-wide">Features</h2>
+
+      <p className="text-[#9194a1]">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
 
       <Router>
-        <ul>
-          <li>
-            <Link to="/">Simple Bookmarking</Link>
+        <ul className="border-t border-b mt-7 tracking-wider">
+          <li className="relative border-b pb-[0.875rem] pt-4">
+            <Link to="/" onClick={() => handleLinkClick("bookmarking")}>
+              Simple Bookmarking
+            </Link>
+            <div
+              className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
+                activeLink === "bookmarking" ? "" : "invisible"
+              }`}
+            ></div>
           </li>
-          <li>
-            <Link to="/searching">Speedy Searching</Link>
+          <li className="relative border-b pb-[0.875rem] pt-4">
+            <Link to="/searching" onClick={() => handleLinkClick("searching")}>
+              Speedy Searching
+            </Link>
+            <div
+              className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
+                activeLink === "searching" ? "" : "invisible"
+              }`}
+            ></div>
           </li>
-          <li>
-            <Link to="/sharing">Easy Sharing</Link>
+          <li className="relative pb-[0.875rem] pt-4">
+            <Link to="/sharing" onClick={() => handleLinkClick("sharing")}>
+              Easy Sharing
+            </Link>
+            <div
+              className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
+                activeLink === "sharing" ? "" : "invisible"
+              }`}
+            ></div>
           </li>
         </ul>
         <Routes>
