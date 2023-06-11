@@ -7,6 +7,7 @@ import Button from "../buttons/Button";
 
 import Features from "../blocks/Features";
 import FAQ from "../blocks/FAQ";
+import MailForm from "../blocks/MailForm";
 
 export default function Main() {
   return (
@@ -101,7 +102,10 @@ export default function Main() {
           </div>
         </div>
       </section>
+
       <FAQ />
+
+      <MailForm />
     </main>
   );
 }
