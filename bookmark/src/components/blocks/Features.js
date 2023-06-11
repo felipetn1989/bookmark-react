@@ -6,10 +6,10 @@ import Searching from "./Searching";
 import Sharing from "./Sharing";
 
 export default function Features() {
-  const [activeLink, setActiveLink] = useState("bookmarking");
+  const [activeLink, setActiveLink] = useState("/");
 
-  function handleLinkClick(path) {
-    setActiveLink(path);
+  function handleLinkClick(e) {
+    setActiveLink(e.target.pathname)
   }
 
   return (
@@ -25,32 +25,32 @@ export default function Features() {
       <Router>
         <ul className="border-t border-b mt-7 tracking-wider">
           <li className="relative border-b pb-[0.875rem] pt-4">
-            <Link to="/" onClick={() => handleLinkClick("bookmarking")}>
+            <Link value="bookmarking" to="/" onClick={handleLinkClick}>
               Simple Bookmarking
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "bookmarking" ? "" : "invisible"
+                activeLink === "/" ? "" : "invisible"
               }`}
             ></div>
           </li>
           <li className="relative border-b pb-[0.875rem] pt-4">
-            <Link to="/searching" onClick={() => handleLinkClick("searching")}>
+            <Link to="/searching" onClick={handleLinkClick}>
               Speedy Searching
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "searching" ? "" : "invisible"
+                activeLink === "/searching" ? "" : "invisible"
               }`}
             ></div>
           </li>
           <li className="relative pb-[0.875rem] pt-4">
-            <Link to="/sharing" onClick={() => handleLinkClick("sharing")}>
+            <Link to="/sharing" onClick={handleLinkClick}>
               Easy Sharing
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "sharing" ? "" : "invisible"
+                activeLink === "/sharing" ? "" : "invisible"
               }`}
             ></div>
           </li>

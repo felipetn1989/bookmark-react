@@ -39,7 +39,9 @@ export default function Main() {
         </div>
       </section>
       <Features />
+      <section>
 
+      </section>
     </main>
   );
 }
