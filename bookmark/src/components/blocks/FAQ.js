@@ -12,7 +12,7 @@ export default function FAQ() {
   }
 
   return (
-    <div className="grid gap-4 px-8 mt-[8.6875rem]">
+    <div className="grid gap-4 px-8 mt-[8.6875rem] max-w-5xl m-auto">
       <h2 className="text-2xl font-medium px-2 tracking-wide">
         Frequently Asked Questions
       </h2>

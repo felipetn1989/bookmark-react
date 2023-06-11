@@ -5,13 +5,13 @@ import image from "../images/illustration-features-tab-2.svg";
 export default function Searching() {
   return (
     <div>
-      <div className="grid gap-20 my-[3.5625rem]">
+      <div className="relative grid gap-20 my-[3.5625rem]">
         <img
           className="m-auto"
           src={image}
           alt="Drawing of a internet site home screen"
         />
-        <div className="absolute top-[83.5rem] left-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-r-full"></div>
+        <div className="absolute top-[2.1875rem] left-[-2rem] h-[12.75rem] w-[97%] bg-[#5368df] -z-10 rounded-r-full m-auto"></div>
         <div className="grid gap-3.5">
           <h3 className="text-2xl font-medium tracking-wide">
             Intelligent search

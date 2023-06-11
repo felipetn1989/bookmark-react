@@ -12,7 +12,7 @@ import MailForm from "../blocks/MailForm";
 export default function Main() {
   return (
     <main className="text-center">
-      <section className="relative grid gap-[3.625rem] my-9">
+      <section className="relative grid gap-[3.625rem] my-9 max-w-5xl m-auto">
         <img
           className="w-[22rem] m-auto"
           src={hero}
@@ -30,7 +30,7 @@ export default function Main() {
             free.
           </p>
 
-          <div className="flex justify-center gap-4 my-3.5 place-content-center">
+          <div className="flex justify-center gap-4 my-3.5 place-content-center max-w-lg m-auto">
             <Button
               bg="bg-[#5368df]"
               textColor="text-white"
@@ -47,7 +47,7 @@ export default function Main() {
 
       <Features />
 
-      <section className="grid place-content-center gap-3 mt-8 px-8">
+      <section className="grid place-content-center gap-3 mt-8 px-8 max-w-5xl m-auto">
         <h2 className="text-2xl font-medium tracking-wide">
           Download the extension
         </h2>

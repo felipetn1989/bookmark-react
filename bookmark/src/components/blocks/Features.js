@@ -13,7 +13,7 @@ export default function Features() {
   }
 
   return (
-    <div className="grid gap-3 px-8 mt-[8.5rem]">
+    <div className="grid gap-3 px-8 mt-[8.5rem] max-w-5xl m-auto">
       <h2 className="text-2xl font-medium tracking-wide">Features</h2>
 
       <p className="text-[#9194a1]">
