@@ -44,7 +44,7 @@ export default function Main() {
 
       <Features />
 
-      <section className="grid gap-3 mt-8 px-8">
+      <section className="grid place-content-center gap-3 mt-8 px-8">
         <h2 className="text-2xl font-medium tracking-wide">
           Download the extension
         </h2>
@@ -54,38 +54,48 @@ export default function Main() {
           you’ve got a favourite you’d like us to prioritize.
         </p>
 
-        <div className="mt-7">
-          <div className="shadow-md py-12 grid gap-0.5">
+        <div className="grid gap-10 mt-7 m-auto">
+          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
             <img className="m-auto mb-8" src={chrome} alt="Chrome logo" />
-            <h3 className="text-xl font-medium tracking-wider">Add to Chrome</h3>
-            <p className="border-dotted border-b-[4px]">Minimum version 62</p>
+            <h3 className="text-xl font-medium tracking-wider">
+              Add to Chrome
+            </h3>
+            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
+              Minimum version 62
+            </p>
             <Button
               bg="bg-[#5368df]"
               textColor="text-white"
               text="Add & Install Extension"
-              width="w-56"
+              width="w-[14.4375rem]"
             />
           </div>
-          <div className="shadow-md py-12 grid gap-0.5 place-content-center">
-            <img className="m-auto mb-8" src={opera} alt="Opera logo" />
-            <h3 className="text-xl font-medium tracking-wider">Add to Firefox</h3>
-            <p className="border-dotted border-b-[4px]">Minimum version 55</p>
-            <Button
-              bg="bg-[#5368df]"
-              textColor="text-white"
-              text="Add & Install Extension"
-              width="w-56"
-            />
-          </div>
-          <div className="shadow-md py-12 grid gap-0.5 place-content-center">
+          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
             <img className="m-auto mb-8" src={firefox} alt="Firefox logo" />
-            <h3 className="text-xl font-medium tracking-wider">Add to Opera</h3>
-            <p className="border-dotted border-b-[4px]">Minimum version 46</p>
+            <h3 className="text-xl font-medium tracking-wider">Add to Firefox</h3>
+            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
+              Minimum version 46
+            </p>
             <Button
               bg="bg-[#5368df]"
               textColor="text-white"
               text="Add & Install Extension"
-              width="w-56"
+              width="w-[14.4375rem]"
+            />
+          </div>
+          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
+            <img className="m-auto mb-8" src={opera} alt="Opera logo" />
+            <h3 className="text-xl font-medium tracking-wider">
+              Add to Opera
+            </h3>
+            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
+              Minimum version 55
+            </p>
+            <Button
+              bg="bg-[#5368df]"
+              textColor="text-white"
+              text="Add & Install Extension"
+              width="w-[14.4375rem]"
             />
           </div>
         </div>
