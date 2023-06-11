@@ -2,10 +2,12 @@ import hero from "../images/illustration-hero.svg";
 
 import Button from "../buttons/Button";
 
+import Features from "../blocks/Features";
+
 export default function Main() {
   return (
-    <main>
-      <section className="grid gap-[3.625rem] text-center my-9">
+    <main className="text-center">
+      <section className="grid gap-[3.625rem] my-9">
         <img
           className="w-[22rem] m-auto"
           src={hero}
@@ -36,6 +38,8 @@ export default function Main() {
           </div>
         </div>
       </section>
+      <Features />
+
     </main>
   );
 }
