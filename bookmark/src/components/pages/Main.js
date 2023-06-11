@@ -1,4 +1,7 @@
 import hero from "../images/illustration-hero.svg";
+import chrome from "../images/logo-chrome.svg"
+import firefox from "../images/logo-firefox.svg"
+import opera from "../images/logo-opera.svg"
 
 import Button from "../buttons/Button";
 
@@ -39,8 +42,46 @@ export default function Main() {
         </div>
       </section>
       <Features />
-      <section>
+      <section className="grid gap-3 mt-8 px-8">
+        <h2 className="text-2xl font-medium tracking-wide">Download the extension</h2>
 
+        <p className="text-[#9194a1]">
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
+
+        <div className="mt-7">
+          <div className="shadow-md py-12">
+            <img className="m-auto" src={chrome} alt="Chrome logo" />
+            <h3>Add to Chrome</h3>
+            <p className="border-dotted border-b-[4px]">Minimum version 62</p>
+            <Button
+              bg="bg-[#5368df]"
+              textColor="text-white"
+              text="Add & Install Extension"
+            />
+          </div>
+          <div className="shadow-md py-12">
+            <img className="m-auto" src={opera} alt="Opera logo" />
+            <h3>Add to Firefox</h3>
+            <p className="border-dotted border-b-[4px]">Minimum version 55</p>
+            <Button
+              bg="bg-[#5368df]"
+              textColor="text-white"
+              text="Add & Install Extension"
+            />
+          </div>
+          <div className="shadow-md py-12">
+            <img className="m-auto" src={firefox} alt="Firefox logo" />
+            <h3>Add to Opera</h3>
+            <p className="border-dotted border-b-[4px]">Minimum version 46</p>
+            <Button
+              bg="bg-[#5368df]"
+              textColor="text-white"
+              text="Add & Install Extension"
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
