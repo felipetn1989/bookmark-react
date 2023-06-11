@@ -10,8 +10,11 @@ export default function Bookmarking() {
         src={image}
         alt="Drawing of a internet site home screen"
       />
+      <div className="absolute top-[83.5rem] left-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-r-full"></div>
       <div className="grid gap-3.5">
-        <h3 className="text-2xl font-medium tracking-wide">Bookmark in one click</h3>
+        <h3 className="text-2xl font-medium tracking-wide">
+          Bookmark in one click
+        </h3>
         <p className="text-[#9194a1]">
           Organize your bookmarks however you like. Our simple drag-and-drop
           interface gives you complete control over how you manage your

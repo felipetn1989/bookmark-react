@@ -10,12 +10,9 @@ export default function MailForm() {
 
       <div className="grid gap-4">
           <Input formName="mailForm" type="email" placeholder="Enter your email address" />
-          <Button
-            bg="bg-[#fa5757]"
-            textColor="text-white"
-            text="Contact Us"
-            width="w-full"
-          />
+          <button className={`text-sm font-medium shadow-md px-[1.1875rem] py-3.5 tracking-wide rounded-md m-auto hover:bg-white w-full bg-[#fa5757] hover:text-[#fa5757] border border-[#fa5757]`}>
+            Contact Us
+        </button>
       </div>
     </form>
   );

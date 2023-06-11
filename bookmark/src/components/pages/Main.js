@@ -12,12 +12,13 @@ import MailForm from "../blocks/MailForm";
 export default function Main() {
   return (
     <main className="text-center">
-      <section className="grid gap-[3.625rem] my-9">
+      <section className="relative grid gap-[3.625rem] my-9">
         <img
           className="w-[22rem] m-auto"
           src={hero}
           alt="Drawing of a tablet screen"
         />
+        <div className="absolute top-[3.5rem] right-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-l-full"></div>
         <div className="grid gap-5 place-content-center px-8">
           <h1 className="text-3xl font-medium tracking-wide leading-[2.4375rem]">
             A Simple Bookmark Manager

@@ -13,7 +13,7 @@ export default function FAQ() {
         answered please feel free to email us.
       </p>
       <div className="mt-[1.9375rem] mb-7">
-        <div className="border-b py-[1.375rem]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
           <div className="flex items-center justify-between">
             <h3 className="text-sm tracking-wider">What is Bookmark?</h3>
             <img src={arrow} alt="Arrow icon" />
@@ -24,7 +24,7 @@ export default function FAQ() {
             quis quam ornare mattis.
           </p>
         </div>
-        <div className="border-b py-[1.375rem]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
           <div className="flex items-center justify-between">
             <h3 className="text-sm tracking-wider">
               How can I request a new browser?
@@ -40,7 +40,7 @@ export default function FAQ() {
             imperdiet.
           </p>
         </div>
-        <div className="border-b py-[1.375rem]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
           <div className="flex items-center justify-between">
             <h3 className="text-sm tracking-wider">Is there a mobile app?</h3>
             <img src={arrow} alt="Arrow icon" />
@@ -52,7 +52,7 @@ export default function FAQ() {
             ex et ultricies bibendum.
           </p>
         </div>
-        <div className="border-b py-[1.375rem]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
           <div className="flex items-center justify-between">
             <h3 className="text-sm tracking-wider">
               What about other Chromium browsers?
