@@ -11,11 +11,17 @@ export default function Header() {
     setShowMenu(!showMenu);
   }
 
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setShowMenu(false);
+    });
+  }, []);
+
   return (
     <header
       className={`relative px-8 py-10 w-full ${
         showMenu ? "pt-[3.1875rem] pb-[3.375rem]" : ""
-      }`}
+      } lg:flex lg:justify-between`}
     >
       <div className={`flex justify-between items-center`}>
         <img
@@ -26,14 +32,14 @@ export default function Header() {
         <button
           className={`${
             showMenu ? "fixed right-8" : ""
-          } z-20 hover:cursor-pointer`}
+          } z-20 hover:cursor-pointer  lg:hidden`}
           onClick={toggleMenu}
         >
           <img src={!showMenu ? hamburger : close} alt="Menu Icon" />
         </button>
       </div>
       {showMenu && (
-        <div className="bg-[#252b46dd] w-full">
+        <div className="bg-[#252b46dd] w-full lg:hidden">
           <ul className="z-10 fixed top-0 left-0 px-8 pt-[6.5625rem] w-full h-[100vh] text-center text-white tracking-[0.1875rem] bg-[#252b46dd] font-medium">
             <li className="border-t border-b border-white uppercase text-xl py-[1.125rem] hover:cursor-pointer">
               Features
@@ -50,6 +56,16 @@ export default function Header() {
           </ul>
         </div>
       )}
+      <div className="hidden lg:block">
+        <ul className="flex items-center gap-8 text-center text-[#252b46] tracking-[0.1875rem]">
+          <li className="uppercase text-sm hover:cursor-pointer">Features</li>
+          <li className="uppercase text-sm hover:cursor-pointer">Pricing</li>
+          <li className="uppercase text-sm hover:cursor-pointer">Contact</li>
+          <li className="border border-[#fa5757] bg-[#fa5757] text-white rounded-md py-1 px-4 text-sm">
+            <button className="uppercase tracking-widest">Login</button>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 }
