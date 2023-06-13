@@ -17,7 +17,7 @@ export default function MailForm() {
     const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
     setShowError(!emailRegex.test(mail));
-  }
+  } // email validation
 
   return (
     <form

@@ -9,7 +9,7 @@ export default function Features() {
   const [activeLink, setActiveLink] = useState("/");
 
   function handleLinkClick(e) {
-    setActiveLink(e.target.pathname)
+    setActiveLink(e.target.pathname);
   }
 
   return (
@@ -21,7 +21,7 @@ export default function Features() {
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
-
+      
       <Router>
         <ul className="border-t border-b mt-7 tracking-wider">
           <li className="relative border-b pb-[0.875rem] pt-4 hover:text-[#fa5757]">

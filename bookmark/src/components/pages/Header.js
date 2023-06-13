@@ -15,7 +15,7 @@ export default function Header() {
     window.addEventListener("resize", () => {
       setShowMenu(false);
     });
-  }, []);
+  }, []); // this part of the code will close the hamburger menu whenever I resize the screen, to avoid breaking the flow of the page
 
   return (
     <header

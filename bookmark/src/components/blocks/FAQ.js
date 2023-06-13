@@ -9,7 +9,7 @@ export default function FAQ() {
     expandedItemId === itemId
       ? setExpandedItemId(null)
       : setExpandedItemId(itemId);
-  }
+  } // if the item is already expanded, it will close it
 
   return (
     <div className="grid gap-4 px-8 mt-[8.6875rem] max-w-5xl m-auto">
@@ -42,7 +42,7 @@ export default function FAQ() {
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
             </p>
-          )}
+          )} {/* each answer will be displayed when the corresponding id is assigned to the expandedItemId variable */}
         </div>
         <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
           <div
