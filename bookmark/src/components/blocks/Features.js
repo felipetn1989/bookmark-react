@@ -6,7 +6,7 @@ import Searching from "./Searching";
 import Sharing from "./Sharing";
 
 export default function Features() {
-  const [activeLink, setActiveLink] = useState("bookmark-react/");
+  const [activeLink, setActiveLink] = useState("/bookmark-react/");
 
   function handleLinkClick(e) {
     setActiveLink(e.target.pathname);
@@ -21,16 +21,20 @@ export default function Features() {
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
-      
+
       <Router>
         <ul className="border-t border-b mt-7 tracking-wider">
           <li className="relative border-b pb-[0.875rem] pt-4 hover:text-[#fa5757]">
-            <Link value="bookmarking" to="bookmark-react/" onClick={handleLinkClick}>
+            <Link
+              value="bookmarking"
+              to="bookmark-react/"
+              onClick={handleLinkClick}
+            >
               Simple Bookmarking
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "bookmark-react/" ? "" : "invisible"
+                activeLink === "/bookmark-react/" ? "" : "invisible"
               }`}
             ></div>
           </li>
@@ -40,7 +44,7 @@ export default function Features() {
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "bookmark-react/searching" ? "" : "invisible"
+                activeLink === "/bookmark-react/searching" ? "" : "invisible"
               }`}
             ></div>
           </li>
@@ -50,7 +54,7 @@ export default function Features() {
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "bookmark-react/sharing" ? "" : "invisible"
+                activeLink === "/bookmark-react/sharing" ? "" : "invisible"
               }`}
             ></div>
           </li>
