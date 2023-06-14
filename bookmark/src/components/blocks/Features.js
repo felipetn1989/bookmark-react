@@ -6,7 +6,7 @@ import Searching from "./Searching";
 import Sharing from "./Sharing";
 
 export default function Features() {
-  const [activeLink, setActiveLink] = useState("/");
+  const [activeLink, setActiveLink] = useState("bookmark-react/");
 
   function handleLinkClick(e) {
     setActiveLink(e.target.pathname);
@@ -25,40 +25,40 @@ export default function Features() {
       <Router>
         <ul className="border-t border-b mt-7 tracking-wider">
           <li className="relative border-b pb-[0.875rem] pt-4 hover:text-[#fa5757]">
-            <Link value="bookmarking" to="/" onClick={handleLinkClick}>
+            <Link value="bookmarking" to="bookmark-react/" onClick={handleLinkClick}>
               Simple Bookmarking
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "/" ? "" : "invisible"
+                activeLink === "bookmark-react/" ? "" : "invisible"
               }`}
             ></div>
           </li>
           <li className="relative border-b pb-[0.875rem] pt-4 hover:text-[#fa5757]">
-            <Link to="/searching" onClick={handleLinkClick}>
+            <Link to="bookmark-react/searching" onClick={handleLinkClick}>
               Speedy Searching
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "/searching" ? "" : "invisible"
+                activeLink === "bookmark-react/searching" ? "" : "invisible"
               }`}
             ></div>
           </li>
           <li className="relative pb-[0.875rem] pt-4 hover:text-[#fa5757]">
-            <Link to="/sharing" onClick={handleLinkClick}>
+            <Link to="bookmark-react/sharing" onClick={handleLinkClick}>
               Easy Sharing
             </Link>
             <div
               className={`decoration translate-y-3.5 m-auto w-[8.75rem] h-1 bg-[#fa5757] ${
-                activeLink === "/sharing" ? "" : "invisible"
+                activeLink === "bookmark-react/sharing" ? "" : "invisible"
               }`}
             ></div>
           </li>
         </ul>
         <Routes>
-          <Route path="/" element={<Bookmarking />} />
-          <Route path="/searching" element={<Searching />} />
-          <Route path="/sharing" element={<Sharing />} />
+          <Route path="bookmark-react/" element={<Bookmarking />} />
+          <Route path="bookmark-react/searching" element={<Searching />} />
+          <Route path="bookmark-react/sharing" element={<Sharing />} />
         </Routes>
       </Router>
     </div>
