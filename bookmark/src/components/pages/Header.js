@@ -4,7 +4,7 @@ import hamburger from "../images/icon-hamburger.svg";
 import close from "../images/icon-close.svg";
 import { useEffect, useState } from "react";
 
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
