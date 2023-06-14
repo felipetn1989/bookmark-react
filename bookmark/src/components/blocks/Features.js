@@ -26,7 +26,6 @@ export default function Features() {
         <ul className="border-t border-b mt-7 tracking-wider">
           <li className="relative border-b pb-[0.875rem] pt-4 hover:text-[#fa5757]">
             <Link
-              value="bookmarking"
               to="bookmark-react/"
               onClick={handleLinkClick}
             >

@@ -3,7 +3,6 @@ import logoWhite from "../images/logo-bookmark-white-menu.svg";
 import hamburger from "../images/icon-hamburger.svg";
 import close from "../images/icon-close.svg";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -25,13 +24,12 @@ export default function Header() {
       } lg:flex lg:justify-between`}
     >
       <div className={`flex justify-between items-center`}>
-        <Link to="/bookmark-react/">
-          <img
-            className={`${showMenu ? "fixed" : ""} z-20`}
-            src={showMenu ? logoWhite : logo}
-            alt="Bookmark logo"
-          />
-        </Link>
+        <img
+          className={`${showMenu ? "fixed" : ""} z-20`}
+          src={showMenu ? logoWhite : logo}
+          alt="Bookmark logo"
+        />
+
         <button
           className={`${
             showMenu ? "fixed right-8" : ""
