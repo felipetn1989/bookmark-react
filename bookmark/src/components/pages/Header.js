@@ -24,13 +24,11 @@ export default function Header() {
       } lg:flex lg:justify-between`}
     >
       <div className={`flex justify-between items-center`}>
-        <a href="/">
-          <img
-            className={`${showMenu ? "fixed" : ""} z-20`}
-            src={showMenu ? logoWhite : logo}
-            alt="Bookmark logo"
-          />
-        </a>
+        <img
+          className={`${showMenu ? "fixed" : ""} z-20`}
+          src={showMenu ? logoWhite : logo}
+          alt="Bookmark logo"
+        />
 
         <button
           className={`${
