@@ -13,22 +13,19 @@ export default function Features() {
   }
 
   return (
-    <div className="grid gap-3 px-8 mt-[8.5rem] max-w-5xl m-auto">
-      <h2 className="text-2xl font-medium tracking-wide">Features</h2>
+    <Router>
+      <div className="grid gap-3 px-8 mt-[8.5rem] max-w-5xl m-auto">
+        <h2 className="text-2xl font-medium tracking-wide">Features</h2>
 
-      <p className="text-[#9194a1]">
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
+        <p className="text-[#9194a1]">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
 
-      <Router>
         <ul className="border-t border-b mt-7 tracking-wider">
           <li className="relative border-b pb-[0.875rem] pt-4 hover:text-[#fa5757]">
-            <Link
-              to="bookmark-react/"
-              onClick={handleLinkClick}
-            >
+            <Link to="bookmark-react/" onClick={handleLinkClick}>
               Simple Bookmarking
             </Link>
             <div
@@ -58,12 +55,13 @@ export default function Features() {
             ></div>
           </li>
         </ul>
+
         <Routes>
           <Route path="bookmark-react/" element={<Bookmarking />} />
           <Route path="bookmark-react/searching" element={<Searching />} />
           <Route path="bookmark-react/sharing" element={<Sharing />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
