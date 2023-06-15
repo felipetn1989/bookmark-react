@@ -21,7 +21,7 @@ export default function Header() {
     <header
       className={`relative px-8 py-10 w-full ${
         showMenu ? "pt-[3.1875rem] pb-[3.375rem]" : ""
-      } lg:flex lg:justify-between`}
+      } lg:flex lg:justify-between lg:px-[10.75rem] lg:py-[3.0625rem]`}
     >
       <div className={`flex justify-between items-center`}>
         <img
@@ -58,11 +58,17 @@ export default function Header() {
         </div>
       )}
       <div className="hidden lg:block">
-        <ul className="flex items-center gap-8 text-center text-[#252b46] tracking-[0.1875rem]">
-          <li className="uppercase text-sm hover:cursor-pointer">Features</li>
-          <li className="uppercase text-sm hover:cursor-pointer">Pricing</li>
-          <li className="uppercase text-sm hover:cursor-pointer">Contact</li>
-          <li className="border border-[#fa5757] bg-[#fa5757] text-white rounded-md py-1 px-4 text-sm">
+        <ul className="flex items-center gap-8 text-center text-[#252b46] tracking-[0.1875rem] lg:gap-[2.25rem]">
+          <li className="uppercase text-sm hover:cursor-pointer lg:text-xs hover:text-[#fa5757]">
+            Features
+          </li>
+          <li className="uppercase text-sm hover:cursor-pointer lg:text-xs hover:text-[#fa5757]">
+            Pricing
+          </li>
+          <li className="uppercase text-sm hover:cursor-pointer lg:text-xs hover:text-[#fa5757]">
+            Contact
+          </li>
+          <li className="border border-[#fa5757] bg-[#fa5757] text-white rounded-md py-1 px-4 text-sm lg:text-xs lg:px-9 lg:py-[0.6875rem] lg:translate-x-2 hover:bg-white hover:text-[#fa5757]">
             <button className="uppercase tracking-widest">Login</button>
           </li>
         </ul>
