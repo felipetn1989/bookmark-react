@@ -12,25 +12,25 @@ import MailForm from "../blocks/MailForm";
 export default function Main() {
   return (
     <main className="text-center">
-      <section className="relative grid gap-[3.625rem] my-9 max-w-5xl m-auto">
+      <section className="relative grid gap-[3.625rem] my-9 m-auto lg:flex lg:flex-row-reverse lg:px-14 lg:my-14">
         <img
-          className="w-[22rem] m-auto"
+          className="w-[22rem] m-auto lg:w-[41rem]"
           src={hero}
           alt="Drawing of a tablet screen"
         />
-        <div className="absolute top-[3.5rem] right-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-l-full"></div>
-        <div className="grid gap-5 place-content-center px-8">
-          <h1 className="text-3xl font-medium tracking-wide leading-[2.4375rem]">
+        <div className="absolute top-[3.5rem] right-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-l-full lg:top-[8.75rem] lg:h-[22.125rem] lg:w-[36%]"></div>
+        <div className="grid gap-5 place-content-center px-8 lg:text-left lg:ml-[4.8125rem] lg:mt-[-0.5625rem] lg:gap-7">
+          <h1 className="text-3xl font-medium tracking-wide leading-[2.4375rem] lg:text-5xl">
             A Simple Bookmark Manager
           </h1>
 
-          <p className="text-[#9194a1]">
+          <p className="text-[#9194a1] lg:text-[1.1875rem]">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </p>
 
-          <div className="flex justify-center gap-4 my-3.5 place-content-center max-w-lg m-auto">
+          <div className="flex justify-center gap-4 my-3.5 max-w-lg m-auto lg:justify-start lg:m-[unset] lg:mt-1">
             <Button
               bg="bg-[#5368df]"
               textColor="text-white"
@@ -75,7 +75,9 @@ export default function Main() {
           </div>
           <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
             <img className="m-auto mb-8" src={firefox} alt="Firefox logo" />
-            <h3 className="text-xl font-medium tracking-wider">Add to Firefox</h3>
+            <h3 className="text-xl font-medium tracking-wider">
+              Add to Firefox
+            </h3>
             <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
               Minimum version 46
             </p>
@@ -88,9 +90,7 @@ export default function Main() {
           </div>
           <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
             <img className="m-auto mb-8" src={opera} alt="Opera logo" />
-            <h3 className="text-xl font-medium tracking-wider">
-              Add to Opera
-            </h3>
+            <h3 className="text-xl font-medium tracking-wider">Add to Opera</h3>
             <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
               Minimum version 55
             </p>
