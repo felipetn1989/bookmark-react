@@ -12,25 +12,25 @@ import MailForm from "../blocks/MailForm";
 export default function Main() {
   return (
     <main className="text-center">
-      <section className="relative grid gap-[3.625rem] my-9 m-auto lg:flex lg:flex-row-reverse lg:px-14 lg:my-14">
+      <section className="relative grid gap-[3.625rem] my-9 m-auto lg:flex lg:flex-row-reverse lg:px-14 lg:my-14 lg:max-w-[110rem]">
         <img
-          className="w-[22rem] m-auto lg:w-[41rem]"
+          className="w-[22rem] m-auto lg:w-[30rem] xl:w-[41rem]"
           src={hero}
           alt="Drawing of a tablet screen"
         />
-        <div className="absolute top-[3.5rem] right-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-l-full lg:top-[8.75rem] lg:h-[22.125rem] lg:w-[36%]"></div>
+        <div className="absolute top-[3.5rem] right-0 h-[12.75rem] w-[79%] bg-[#5368df] -z-10 rounded-l-full lg:top-[8.75rem] xl:h-[22.125rem] lg:w-[36%]"></div>
         <div className="grid gap-5 place-content-center px-8 lg:text-left lg:ml-[4.8125rem] lg:mt-[-0.5625rem] lg:gap-7">
-          <h1 className="text-3xl font-medium tracking-wide leading-[2.4375rem] lg:text-5xl">
+          <h1 className="text-3xl font-medium tracking-wide leading-[2.4375rem] xl:text-5xl">
             A Simple Bookmark Manager
           </h1>
 
-          <p className="text-[#9194a1] lg:text-[1.1875rem]">
+          <p className="text-[#9194a1] xl:text-[1.1875rem]">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </p>
 
-          <div className="flex justify-center gap-4 my-3.5 max-w-lg m-auto lg:justify-start lg:m-[unset] lg:mt-1">
+          <div className="flex justify-center gap-4 my-3.5 max-w-lg m-auto lg:justify-start lg:m-[unset] xl:mt-1">
             <Button
               bg="bg-[#5368df]"
               textColor="text-white"

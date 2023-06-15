@@ -21,7 +21,7 @@ export default function Header() {
     <header
       className={`relative px-8 py-10 w-full ${
         showMenu ? "pt-[3.1875rem] pb-[3.375rem]" : ""
-      } lg:flex lg:justify-between lg:px-[10.75rem] lg:py-[3.0625rem]`}
+      } lg:flex lg:justify-between lg:px-[10.75rem] lg:py-[3.0625rem] lg:max-w-[110rem] lg:m-auto`}
     >
       <div className={`flex justify-between items-center`}>
         <img
