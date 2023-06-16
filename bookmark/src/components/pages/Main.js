@@ -47,23 +47,23 @@ export default function Main() {
 
       <Features />
 
-      <section className="grid place-content-center gap-3 mt-8 px-8 max-w-5xl m-auto">
-        <h2 className="text-2xl font-medium tracking-wide">
+      <section className="grid place-content-center gap-3 mt-8 px-8 max-w-5xl m-auto lg:mt-[12.75rem] lg:gap-6">
+        <h2 className="text-2xl font-medium tracking-wide lg:text-[2rem]">
           Download the extension
         </h2>
 
-        <p className="text-[#9194a1]">
+        <p className="text-[#9194a1] lg:text-lg lg:px-[12.25rem] lg:tracking-wide">
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
 
-        <div className="grid gap-10 mt-7 m-auto">
-          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
-            <img className="m-auto mb-8" src={chrome} alt="Chrome logo" />
+        <div className="grid gap-10 mt-7 m-auto lg:flex lg:gap-8">
+          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl lg:shadow-lg">
+            <img className="m-auto mb-8 lg:mb-7" src={chrome} alt="Chrome logo" />
             <h3 className="text-xl font-medium tracking-wider">
               Add to Chrome
             </h3>
-            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
+            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem] text-[#9194a1] lg:text-[0.9375rem]">
               Minimum version 62
             </p>
             <Button
@@ -73,12 +73,12 @@ export default function Main() {
               width="w-[14.4375rem]"
             />
           </div>
-          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
-            <img className="m-auto mb-8" src={firefox} alt="Firefox logo" />
+          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl lg:translate-y-10 lg:shadow-lg">
+            <img className="m-auto mb-8 lg:mb-7" src={firefox} alt="Firefox logo" />
             <h3 className="text-xl font-medium tracking-wider">
               Add to Firefox
             </h3>
-            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
+            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem] text-[#9194a1] lg:text-[0.9375rem]">
               Minimum version 46
             </p>
             <Button
@@ -88,10 +88,10 @@ export default function Main() {
               width="w-[14.4375rem]"
             />
           </div>
-          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl">
-            <img className="m-auto mb-8" src={opera} alt="Opera logo" />
+          <div className="shadow-md pt-12 pb-6 grid gap-0.5 place-content-center w-[17.5rem] rounded-xl lg:translate-y-20 lg:translate-x-2 lg:shadow-lg">
+            <img className="m-auto mb-8 lg:mb-7" src={opera} alt="Opera logo" />
             <h3 className="text-xl font-medium tracking-wider">Add to Opera</h3>
-            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem]">
+            <p className="border-dotted border-b-[4px] pb-9 mb-[1.3125rem] text-[#9194a1] lg:text-[0.9375rem]">
               Minimum version 55
             </p>
             <Button
