@@ -11,27 +11,29 @@ export default function FAQ() {
   } // if the item is already expanded, it will close it
 
   return (
-    <div className="grid gap-4 px-8 mt-[8.6875rem] max-w-[110rem] m-auto">
-      <h2 className="text-2xl font-medium px-2 tracking-wide">
+    <div className="grid gap-4 px-8 mt-[8.6875rem] max-w-[110rem] m-auto lg:mt-[15.25rem] lg:gap-6">
+      <h2 className="text-2xl font-medium px-2 tracking-wide lg:text-[1.9375rem] lg:tracking-wider">
         Frequently Asked Questions
       </h2>
-      <p className="text-[#9194a1]">
+      <p className="text-[#9194a1] lg:text-lg lg:px-[27rem] lg:tracking-wide">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
-      <div className="mt-[1.9375rem] mb-7 lg:m-auto">
-        <div className="border-b py-[1.375rem] hover:cursor-pointer ">
+      <div className="mt-[1.9375rem] mb-7 lg:m-auto lg:w-[34rem] lg:mt-[2.125rem]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer  hover:text-[#fa5757] lg:border-t lg:py-[1.125rem]">
           <div
             className="flex items-center justify-between"
             onClick={() => handleOnClick(1)}
           >
-            <h3 className="text-sm tracking-wider hover:text-[#fa5757]">
+            <h3 className="text-sm tracking-wider lg:text-lg lg:tracking-wide">
               What is Bookmark?
             </h3>
             <img
               src={arrow}
               alt="Arrow icon"
-              className={expandedItemId === 1 ? "rotate-180" : ""}
+              className={`${
+                expandedItemId === 1 ? "rotate-180" : ""
+              } lg:translate-x-[-1.5rem]`}
             />
           </div>
           {expandedItemId === 1 && (
@@ -43,18 +45,20 @@ export default function FAQ() {
           )}{" "}
           {/* each answer will be displayed when the corresponding id is assigned to the expandedItemId variable */}
         </div>
-        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757] lg:py-5">
           <div
             className="flex items-center justify-between"
             onClick={() => handleOnClick(2)}
           >
-            <h3 className="text-sm tracking-wider">
+            <h3 className="text-sm tracking-wider lg:text-lg lg:tracking-wide">
               How can I request a new browser?
             </h3>
             <img
               src={arrow}
               alt="Arrow icon"
-              className={expandedItemId === 2 ? "rotate-180" : ""}
+              className={`${
+                expandedItemId === 2 ? "rotate-180" : ""
+              } lg:translate-x-[-1.5rem]`}
             />
           </div>
 
@@ -69,16 +73,20 @@ export default function FAQ() {
             </p>
           )}
         </div>
-        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757] lg:py-5">
           <div
             className="flex items-center justify-between"
             onClick={() => handleOnClick(3)}
           >
-            <h3 className="text-sm tracking-wider">Is there a mobile app?</h3>
+            <h3 className="text-sm tracking-wider lg:text-lg lg:tracking-wide">
+              Is there a mobile app?
+            </h3>
             <img
               src={arrow}
               alt="Arrow icon"
-              className={expandedItemId === 3 ? "rotate-180" : ""}
+              className={`${
+                expandedItemId === 3 ? "rotate-180" : ""
+              } lg:translate-x-[-1.5rem]`}
             />
           </div>
 
@@ -91,18 +99,20 @@ export default function FAQ() {
             </p>
           )}
         </div>
-        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
+        <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757] lg:py-5">
           <div
             className="flex items-center justify-between"
             onClick={() => handleOnClick(4)}
           >
-            <h3 className="text-sm tracking-wider">
+            <h3 className="text-sm tracking-wider lg:text-lg lg:tracking-wide">
               What about other Chromium browsers?
             </h3>
             <img
               src={arrow}
               alt="Arrow icon"
-              className={expandedItemId === 4 ? "rotate-180" : ""}
+              className={`${
+                expandedItemId === 4 ? "rotate-180" : ""
+              } lg:translate-x-[-1.5rem]`}
             />
           </div>
 
@@ -116,7 +126,7 @@ export default function FAQ() {
         </div>
       </div>
       <button
-        className={`bg-[#5368df] text-white w-32 text-sm font-medium shadow-md px-[1.1875rem] py-3.5 tracking-wide rounded-md m-auto hover:bg-white hover:text-[#5368df] lg:px-7`}
+        className={`border border-[#5368df] bg-[#5368df] text-white w-32 text-sm font-medium shadow-md px-[1.1875rem] py-3.5 tracking-wide rounded-md m-auto hover:bg-white hover:text-[#5368df] lg:w-[unset] lg:px-6 lg:mt-[1.375rem]`}
       >
         More Info
       </button>
