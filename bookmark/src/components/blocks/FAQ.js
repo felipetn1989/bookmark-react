@@ -15,7 +15,7 @@ export default function FAQ() {
       <h2 className="text-2xl font-medium px-2 tracking-wide lg:text-[1.9375rem] lg:tracking-wider">
         Frequently Asked Questions
       </h2>
-      <p className="text-[#9194a1] lg:text-lg lg:px-[27rem] lg:tracking-wide">
+      <p className="text-[#9194a1] lg:text-lg lg:w-[31rem] lg:tracking-wide lg:m-auto">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
@@ -126,7 +126,7 @@ export default function FAQ() {
         </div>
       </div>
       <button
-        className={`border border-[#5368df] bg-[#5368df] text-white w-32 text-sm font-medium shadow-md px-[1.1875rem] py-3.5 tracking-wide rounded-md m-auto hover:bg-white hover:text-[#5368df] lg:w-[unset] lg:px-6 lg:mt-[1.375rem]`}
+        className={`border border-[#5368df] bg-[#5368df] text-white w-28 text-sm font-medium shadow-md px-[1.1875rem] py-3.5 tracking-wide rounded-md m-auto hover:bg-white hover:text-[#5368df] lg:w-[unset] lg:px-6 lg:mt-[1.375rem]`}
       >
         More Info
       </button>

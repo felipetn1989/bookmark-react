@@ -22,18 +22,18 @@ export default function MailForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="grid gap-2.5 text-white bg-[#5368df] mt-[7.75rem] pt-[4.375rem] pb-[3.75rem] px-8"
+      className="grid gap-2.5 text-white bg-[#5368df] mt-[7.75rem] pt-[4.375rem] pb-[3.75rem] px-8 lg:mt-[9.25rem] lg:pt-[4.25rem] lg:pb-[4.625rem]"
       action="#"
       noValidate
     >
-      <section className="grid gap-2.5 max-w-5xl m-auto">
-        <h3 className="text-[0.8125rem] font-medium uppercase tracking-[.3125rem]">
+      <section className="grid gap-2 max-w-5xl m-auto lg:gap-10">
+        <h3 className="text-[0.8125rem] font-medium uppercase tracking-[.3125rem] lg:tracking-[0.375rem]">
           35,000+ already joined
         </h3>
-        <h2 className="text-2xl tracking-wider leading-7 mb-[1.375rem]">
+        <h2 className="text-2xl tracking-wider leading-7 mb-[1.375rem] lg:text-[1.9375rem] lg:w-[28rem] lg:font-medium lg:leading-9">
           Stay up-to-date with what we’re doing
         </h2>
-        <div className="grid gap-4">
+        <div className="grid gap-4 lg:flex lg:w-[27.75rem] lg:mt-[-1.5rem]">
           <div>
             <Input
               formName="mailForm"

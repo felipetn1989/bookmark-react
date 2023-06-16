@@ -10,7 +10,7 @@ export default function Input({
       <input
         className={`w-full text-black py-3 px-5 rounded-md placeholder:text-[0.8125rem] placeholder:tracking-widest border ${
           error ? "border-[#fa5757]" : ""
-        }`}
+        } lg:w-[18.8125rem]`}
         type={type}
         name={formName}
         id={formName}
