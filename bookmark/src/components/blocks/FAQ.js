@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Button from "../buttons/Button";
 import arrow from "../images/icon-arrow.svg";
 
 export default function FAQ() {
