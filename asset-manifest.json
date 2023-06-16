@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bookmark-react/static/css/main.20cbb99f.css",
-    "main.js": "/bookmark-react/static/js/main.0d22b813.js",
+    "main.css": "/bookmark-react/static/css/main.efe61541.css",
+    "main.js": "/bookmark-react/static/js/main.dc157c7b.js",
     "static/media/illustration-features-tab-3.svg": "/bookmark-react/static/media/illustration-features-tab-3.a4206aab7946773b29b702492d2d014b.svg",
     "static/media/illustration-features-tab-2.svg": "/bookmark-react/static/media/illustration-features-tab-2.e933bd6d921c537d7743e08ea4ec488e.svg",
     "static/media/illustration-hero.svg": "/bookmark-react/static/media/illustration-hero.07801d05cb11930f0c826add8c05ce22.svg",
@@ -21,11 +21,11 @@
     "static/media/icon-close.svg": "/bookmark-react/static/media/icon-close.b04dc29397de9c9f194fb075c140e966.svg",
     "static/media/icon-hamburger.svg": "/bookmark-react/static/media/icon-hamburger.4385fd507d24f37ccbb3ae359b5c9555.svg",
     "static/media/icon-arrow.svg": "/bookmark-react/static/media/icon-arrow.8174203a5d4fc44f5247b825de6e2158.svg",
-    "main.20cbb99f.css.map": "/bookmark-react/static/css/main.20cbb99f.css.map",
-    "main.0d22b813.js.map": "/bookmark-react/static/js/main.0d22b813.js.map"
+    "main.efe61541.css.map": "/bookmark-react/static/css/main.efe61541.css.map",
+    "main.dc157c7b.js.map": "/bookmark-react/static/js/main.dc157c7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.20cbb99f.css",
-    "static/js/main.0d22b813.js"
+    "static/css/main.efe61541.css",
+    "static/js/main.dc157c7b.js"
   ]
 }
