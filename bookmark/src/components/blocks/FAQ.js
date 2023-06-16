@@ -12,7 +12,7 @@ export default function FAQ() {
   } // if the item is already expanded, it will close it
 
   return (
-    <div className="grid gap-4 px-8 mt-[8.6875rem] max-w-5xl m-auto">
+    <div className="grid gap-4 px-8 mt-[8.6875rem] max-w-[110rem] m-auto">
       <h2 className="text-2xl font-medium px-2 tracking-wide">
         Frequently Asked Questions
       </h2>
@@ -20,7 +20,7 @@ export default function FAQ() {
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
-      <div className="mt-[1.9375rem] mb-7">
+      <div className="mt-[1.9375rem] mb-7 lg:m-auto">
         <div className="border-b py-[1.375rem] hover:cursor-pointer ">
           <div
             className="flex items-center justify-between"
@@ -35,14 +35,14 @@ export default function FAQ() {
               className={expandedItemId === 1 ? "rotate-180" : ""}
             />
           </div>
-
           {expandedItemId === 1 && (
             <p className="text-left text-[#9194a1] pt-1 text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
             </p>
-          )} {/* each answer will be displayed when the corresponding id is assigned to the expandedItemId variable */}
+          )}{" "}
+          {/* each answer will be displayed when the corresponding id is assigned to the expandedItemId variable */}
         </div>
         <div className="border-b py-[1.375rem] hover:cursor-pointer hover:text-[#fa5757]">
           <div
@@ -116,12 +116,11 @@ export default function FAQ() {
           )}
         </div>
       </div>
-      <Button
-        bg="bg-[#5368df]"
-        textColor="text-white"
-        text="More Info"
-        width="w-28"
-      />
+      <button
+        className={`bg-[#5368df] text-white w-32 text-sm font-medium shadow-md px-[1.1875rem] py-3.5 tracking-wide rounded-md m-auto hover:bg-white hover:text-[#5368df] lg:px-7`}
+      >
+        More Info
+      </button>
     </div>
   );
 }
